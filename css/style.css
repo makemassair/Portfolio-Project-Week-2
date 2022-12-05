@@ -158,7 +158,7 @@ nav ul li a:hover {
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 50% 50%;
   grid-template-areas:
-    "cheatsheet cheatsheet"
+    "furniture furniture"
     "jakes coderefractor"
     "darkfloor makemassair";
   margin-top: -12px;
@@ -193,11 +193,11 @@ nav ul li a:hover {
   margin: 0;
   padding: 0;
 }
-#cheatsheet {
-  background-image: url(../images/css_cheatsheet.jpg);
+#furniture {
+  background-image: url(../images/furniture_store.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  grid-area: cheatsheet;
+  grid-area: furniture;
 }
 #jakes {
   background-image: url(../images/work_jakes.jpg);
