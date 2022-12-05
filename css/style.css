@@ -107,6 +107,7 @@ nav ul li a:hover {
   padding: 4px 12px;
   border-radius: 3px;
   background: rgba(0,0,0,0.6);
+  z-index: 100;
 }
 .page-section {
   display: flex;
