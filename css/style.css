@@ -50,21 +50,22 @@ header {
   padding: 24px 48px;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
 }
 header h1 {
   box-sizing: border-box;
   color: var(--light);
   display: inline-flex;
-  letter-spacing: -1px;
-  line-height: 1;
-  margin: 0 24px 0 0;
+  letter-spacing: -1.2px;
+  line-height: 80%;
+  margin: 0 24px 12px 0;
 }
 nav {}
 nav ul {
   list-style: none;
   display: inline-flex;
   column-gap: 16px;
-  margin: 16px 0;
+  margin: 0 0 8px;
 }
 nav ul li {
   display: block;
@@ -257,9 +258,11 @@ nav ul li a:hover {
   header {
     padding: 24px;
     flex-direction: column;
+    align-items: flex-start;
   }
   nav ul {
     justify-content: center;
+    margin: 0;
   }
   
   .page-section {
@@ -331,7 +334,7 @@ nav ul li a:hover {
 }
   .page-section {
     flex-direction: column;
-    padding: 4em 12px 12px;
+    padding: 32px 12px 24px;
 }
   .page-section h2 {
     border-width: 0 0 1px;
@@ -342,14 +345,14 @@ nav ul li a:hover {
   }
   .copy {
     font-size: 13px;
-    padding: 24px 0;
+    padding: 24px 0 0;
     width: 100%;
   }
   .copy p {
-    margin: 24px 0 32px;
+    margin: 4px 0 24px;
 }
   #about img {
-    margin: 12px 12px 0 0;
+    margin: 0 12px 12px 0;
     width: 150px;
   }
   .grid {
@@ -365,16 +368,6 @@ nav ul li a:hover {
   .grid div {
     margin: 12px 0;
   }
-  #contact ul {
-    margin: 0;
-    padding: 0;
-    row-gap: 12px;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    column-gap: 0;
-    font-size: 11px;
-    text-align: right;
-  }   
+  
 }
 
