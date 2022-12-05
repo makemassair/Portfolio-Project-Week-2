@@ -28,8 +28,8 @@ To put into practice the first 2 weeks of the Bootcamp, and pushing our understa
 
 ### Deployed Application
 
-View the deployed application for week-2 04-responsive-portfolio-lesson at makemassair.github.io.
+View the deployed application for week-2: responsive-portfolio-lesson at [makemassair.github.io](https://makemassair.github.io/Portfolio-Project-Week-2/).
 
 ### Screenshot
 
-
+![image](images/screenshot.jpg)
