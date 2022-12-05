@@ -47,25 +47,27 @@ ul {
 header {
   background: var(--dark);
   display: flex;
-  justify-content: space-between;
   padding: 24px 48px;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 header h1 {
   box-sizing: border-box;
   color: var(--light);
   display: inline-flex;
   letter-spacing: -1px;
-  text-transform: uppercase;
   line-height: 1;
+  margin: 0 24px 0 0;
 }
+nav {}
 nav ul {
   list-style: none;
-  display: flex;
-  column-gap: 24px;
+  display: inline-flex;
+  column-gap: 16px;
   margin: 16px 0;
 }
 nav ul li {
-  display: inline-block;
+  display: block;
 }
 nav ul li a {
   border-bottom: 1px solid #8eaebb;
@@ -238,7 +240,7 @@ nav ul li a:hover {
 #contact a:hover {
   border-bottom: none;
   color: var(--dark);
-
+}
 /* Mobile  500px*/ 
 @media only screen and (max-width: 500px) {
   header {
