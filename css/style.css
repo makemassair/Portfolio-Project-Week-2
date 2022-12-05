@@ -1,0 +1,367 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --dark: #051827;
+  --light: #bdd9cd;
+  --blue: #386994;
+  --darkblue: #214457;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  line-height: 1.5;
+  background: rgb(189 217 205 / .3);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+h1 {
+  font-size: 64px;
+}
+p {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  padding: 0 0 2px;
+}
+a[target="_blank"]::after {
+  content: "\1F5D7";
+  display: inline-block;
+  margin-left: 3px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+/* Navigation Styles */
+
+header {
+  background: var(--dark);
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 48px;
+}
+header h1 {
+  box-sizing: border-box;
+  color: var(--light);
+  display: inline-flex;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  line-height: 1;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  column-gap: 24px;
+  margin: 16px 0;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  border-bottom: 1px solid #8eaebb;
+  padding: 0 0 2px;
+  text-transform: uppercase;
+  color: var(--light);
+  letter-spacing: 0.4px;
+  font-size: 14px;
+}
+nav ul li a:focus,
+nav ul li a:hover {
+  border-bottom: none;
+  color: #fff;
+}
+
+/* Page Elements */
+
+.hero-banner {
+  background-image: url(../images/02-portfolio-1.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+  filter: grayscale(1);
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  height: 320px;
+  width: 100%;
+}
+.hero-banner h2 {
+  font-weight: normal;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0 2.2em 2.2em 0;
+  border: 2px solid var(--dark);
+  padding: 4px 12px;
+  border-radius: 3px;
+  background: rgba(0,0,0,0.6);
+}
+.page-section {
+  display: flex;
+  padding: 48px;
+}
+.page-section h2 {
+  border-right: 4px solid var(--darkblue);
+  color: var(--darkblue);
+  display: block;
+  flex-grow: 1;
+  min-width: 180px;
+  padding: 12px 24px 0 0;
+  text-align: right;
+}
+.copy {
+  color: var(--darkblue);
+  flex-grow: 2;
+  font-family: 'Arial', sans-serif;
+  font-size: 18px;
+  padding: 0 0 0 24px;
+  width: calc(100% - 220px);
+}
+#contact .copy {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 13px;
+}
+.copy p {
+  margin: 18px 0 48px;
+}
+
+#about img {
+  border-radius: 400px;
+  filter:grayscale(1);
+  float: right;
+  margin: 0 0 16px 2.2em;
+  max-width: 300px;
+}
+
+/* Portfolio */
+
+.grid {
+  display: grid;
+  min-height: 500px;
+  height: 70vh;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 50% 50%;
+  grid-template-areas:
+    "cheatsheet cheatsheet"
+    "jakes coderefractor"
+    "darkfloor makemassair";
+}
+.grid div {
+  border: 4px solid var(--light);
+  margin: 12px;
+  filter: saturate(0.4);
+}
+.workGrid a {
+  display: flex;
+  height: 100%;
+  align-items: flex-end;
+}
+.grid div:focus,
+.grid div:hover {
+  filter: saturate(1);
+}
+.workGrid .heading {
+  background: var(--light);
+  color: var(--dark);
+  font-weight: bold;
+  padding: 8px 12px;
+  margin: 0 0 2.2em;
+  filter: saturate(1);
+}
+.workGrid p.subheading {
+  font-size: 11px;
+  font-weight: normal;
+  letter-spacing: 0.4px;
+  margin: 0;
+  padding: 0;
+}
+#cheatsheet {
+  background-image: url(../images/css_cheatsheet.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-area: cheatsheet;
+}
+#jakes {
+  background-image: url(../images/work_jakes.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-area: jakes;
+}
+#coderefractor {
+  background-image: url(../images/work_coderefractor.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-area: coderefractor;
+}
+#darkfloor {
+  background-image: url(../images/work_darkfloor.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-area: darkfloor;
+}
+#makemassair {
+  background-image: url(../images/work_makemassair.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-area: makemassair;
+}
+
+/* Contact Me */
+
+#contact ul {
+  list-style: none;
+  display: flex;
+  column-gap: 16px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+#contact ul li {
+  display: block;
+}
+#contact a {
+  border-bottom: 1px solid var(--blue);
+  color: var(--blue);
+}
+#contact a:focus,
+#contact a:hover {
+  border-bottom: none;
+  color: var(--dark);
+
+/* Mobile  500px*/ 
+@media only screen and (max-width: 500px) {
+  header {
+    flex-direction: column;
+  }
+  nav ul {
+    justify-content: left;
+    margin: 0;
+    padding: 0;
+  }
+  .hero-banner h2 {
+    margin: 0 1.2em 1.2em 0;
+}
+  .page-section {
+    flex-direction: column;
+    padding: 4em 12px 12px;
+}
+  .page-section h2 {
+    border-width: 0 0 1px;
+    border-color: var(--light);
+    border-style: solid;
+    padding: 12px 0 0;
+    text-align: left;
+  }
+  .copy {
+    font-size: 13px;
+    padding: 24px 0;
+    width: 100%;
+  }
+  .copy p {
+    margin: 0 6px 32px;
+}
+  #about img {
+    margin: 0 0 0 12px;
+    width: 150px;
+  }
+  .grid {
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    grid-template-areas:
+      "cheatsheet"
+      "jakes"
+      "coderefractor"
+      "darkfloor"
+      "makemassair";
+  }
+  .grid div {
+    margin: 12px 0;
+  }
+  #contact ul {
+    margin: 0;
+    padding: 0;
+    row-gap: 12px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    column-gap: 0;
+    font-size: 11px;
+    text-align: right;
+  }   
+}
+/* Tablet 768px */
+@media only screen and (max-width: 768px) {
+  header {
+    padding: 24px;
+    flex-direction: column;
+  }
+  nav ul {
+    justify-content: center;
+  }
+  .page-section {
+    flex-direction: column;
+    padding: 24px;
+  }
+  .page-section h2 {
+    min-width: 200px;
+    padding: 0;
+    text-align: left;
+  }
+  #contact .copy {
+    justify-content: center;
+  }
+  #contact ul {
+    column-gap: 10px;
+    margin: 18px 0 0;
+    font-size: 14px;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    row-gap: 4px;
+  }
+  .copy {
+    font-size: 16px;
+    width: 100%;
+    padding: 0;
+  }
+  .grid {
+    padding: 12px 0;
+  }
+  .grid div {
+    margin: 12px 0;
+  }
+  #coderefractor,
+  #makemassair {
+    margin-left: 6px;
+  }
+  #jakes,
+  #darkfloor {
+    margin-right: 6px;
+  }
+  #phone {
+    margin: 0 0 -2px;
+  }
+  #phone, 
+  #email {
+    width: 100%;
+  }
+
+}
+/* Desktop */
+
+@media only screen and (max-width: 1366px) {
+  .page-section {
+    padding: 48px 24px;
+  }
+}
