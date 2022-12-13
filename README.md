@@ -8,7 +8,7 @@ Module 2 challenge. Working with CSS to create a responsive and working portfoli
 
 To put into practice the first 2 weeks of the Bootcamp, and pushing our understanding of the processes, code, and application of CSS, HTML and Git. 
 
-### Acceptance Crieteria
+### Acceptance Criteria
 
 * To present a fully working webpage, presenting my name, a recent photo, and links to sections about me, my work, and how to contact me
 * To set anchor points within the page
